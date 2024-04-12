@@ -1,0 +1,24 @@
+body{
+    background: url(/images/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+#car{
+    position: absolute;
+    background-size: contain;
+    width: 200px;
+    top: 600px;
+    left: 0px;
+    animation:drive 2.5s ease-in;
+    animation-delay: 1s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes drive {
+    from{transform: translateX(0px);}
+    to{transform: translateX(1400px);}
+}
+
